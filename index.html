@@ -3,12 +3,170 @@
     <head>
         <title>Gas Cylinder</title>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+          @font-face {
+    font-family: 'Gabriola';
+    src: url('Gabriola.eot');
+    src: local('./font/Gabriola'),
+        url('./font/Gabriola.eot?#iefix') format('embedded-opentype'),
+        url('./font/Gabriola.woff2') format('woff2'),
+        url('./font/Gabriola.woff') format('woff'),
+        url('./font/Gabriola.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Usuality';
+    src: url('Usuality.eot');
+    src: local('./font/Usuality'),
+        url('./font/Usuality.eot?#iefix') format('embedded-opentype'),
+        url('./font/Usuality.woff2') format('woff2'),
+        url('./font/Usuality.woff') format('woff'),
+        url('./font/Usuality.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Usual';
+    src: url('Usual-ExtraBold.eot');
+    src: local('./font/Usual ExtraBold'), local('Usual-ExtraBold'),
+        url('./font/Usual-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('./font/Usual-ExtraBold.woff2') format('woff2'),
+        url('./font/Usual-ExtraBold.woff') format('woff'),
+        url('./font/Usual-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Usual';
+    src: url('Usual-Italic.eot');
+    src: local('./font/Usual Italic'), local('Usual-Italic'),
+        url('./font/Usual-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./font/Usual-Italic.woff2') format('woff2'),
+        url('./font/Usual-Italic.woff') format('woff'),
+        url('./font/Usual-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Usual';
+    src: url('Usual-BoldItalic.eot');
+    src: local('./font/Usual Bold Italic'), local('Usual-BoldItalic'),
+        url('./font/Usual-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./font/Usual-BoldItalic.woff2') format('woff2'),
+        url('./font/Usual-BoldItalic.woff') format('woff'),
+        url('./font/Usual-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Usual';
+    src: url('Usual-Light.eot');
+    src: local('./font/Usual Light'), local('Usual-Light'),
+        url('./font/Usual-Light.eot?#iefix') format('embedded-opentype'),
+        url('./font/Usual-Light.woff2') format('woff2'),
+        url('./font/Usual-Light.woff') format('woff'),
+        url('./font/Usual-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Usual';
+    src: url('Usual-MediumItalic.eot');
+    src: local('./font/Usual Medium Italic'), local('Usual-MediumItalic'),
+        url('./font/Usual-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./font/Usual-MediumItalic.woff2') format('woff2'),
+        url('./font/Usual-MediumItalic.woff') format('woff'),
+        url('./font/Usual-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Usual';
+    src: url('Usual-LightItalic.eot');
+    src: local('./font/Usual Light Italic'), local('Usual-LightItalic'),
+        url('./font/Usual-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./font/Usual-LightItalic.woff2') format('woff2'),
+        url('./font/Usual-LightItalic.woff') format('woff'),
+        url('./font/Usual-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Usual';
+    src: url('Usual-Bold.eot');
+    src: local('./font/Usual Bold'), local('Usual-Bold'),
+        url('./font/Usual-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./font/Usual-Bold.woff2') format('woff2'),
+        url('./font/Usual-Bold.woff') format('woff'),
+        url('./font/Usual-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Usual';
+    src: url('Usual-ExtraBoldItalic.eot');
+    src: local('./font/Usual ExtraBold Italic'), local('Usual-ExtraBoldItalic'),
+        url('./font/Usual-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./font/Usual-ExtraBoldItalic.woff2') format('woff2'),
+        url('./font/Usual-ExtraBoldItalic.woff') format('woff'),
+        url('./font/Usual-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Usual';
+    src: url('Usual-Medium.eot');
+    src: local('./font/Usual Medium'), local('Usual-Medium'),
+        url('./font/Usual-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./font/Usual-Medium.woff2') format('woff2'),
+        url('./font/Usual-Medium.woff') format('woff'),
+        url('./font/Usual-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Usual';
+    src: url('Usual-Regular.eot');
+    src: local('./font/Usual'), local('Usual-Regular'),
+        url('./font/Usual-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./font/Usual-Regular.woff2') format('woff2'),
+        url('./font/Usual-Regular.woff') format('woff'),
+        url('./font/Usual-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@media  screen and (max-width: 767px) {
+    table {
+	width: 100%;
+}
+
+table td {
+	display: inline-block;width:100%;
+}
+table .logo td {
+	text-align: center;
+}
+.icon img {
+	width: 32px !important;
+}
+}
+
         
         </style>
     </head>
     <body style="margin:0;padding:0;background:#cecece;">
-            <table cellspacing="0" cellpadding="0" border="0px" bgcolor="#fff" align="center" width="657">
+            <table cellspacing="0" cellpadding="0" border="0px" bgcolor="#fff" align="center" width="657" style="font-family: 'Usual';">
                     <tr>
                         <td>
                         <table border="0" align="center" bgcolor="#282828" width="657" cellpadding="20" cellspacing="0" class="container657">
@@ -22,7 +180,7 @@
                     <tr>
                         <td>
                         <table cellspacing="0" cellpadding="0" border="0px" bgcolor="#d12229" align="center" width="657px" class="container657"
-                        style="font-family: 'PT Sans', sans-serif;">
+                        style="font-family: 'Usual';">
                         <tr>
                             <td height="30" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
                         </tr>
@@ -47,8 +205,7 @@
                      </tr>
                      <tr>
                          <td>
-                        <table cellspacing="0" cellpadding="0" border="0px" bgcolor="#f7f7f7" align="center" width="657px" class="container657"
-                        style="font-family: 'PT Sans', sans-serif;">
+                        <table cellspacing="0" cellpadding="0" border="0px" bgcolor="#f7f7f7" align="center" width="657px" class="container657">
                         <tr>
                             <td height="30" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
                         </tr>
@@ -143,26 +300,20 @@
                   <tr>
                     <td>
                         
-                      <table  border="0" cellpadding="0" bgcolor="#f3f3f3"  cellspacing="0" width="657" align="center">
+                      <table  border="0" cellpadding="0" bgcolor="#f3f3f3"  cellspacing="0" width="657" align="center" >
                             <tr>
-                                <td width="10%">
-                                    <table  cellspacing="0" cellpadding="0" border="0" align="left">
-                                        <tr>
-                                            <td width="5" height="20"></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td  width="20%" valign="middle">
+                                
+                                <td  width="100">
                                 <table  cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
-                                <td class="range-text" style="background:white;text-align:center">
-                                    <h3>GTR13</h3>
+                                <td class="range-text" style="background:white;text-align:center;padding-top:30px;">
+                                    <h3 style="margin: 0px;">GTR13</h3>
                                     <p>Single Cylinder<br>
                                         Rota Trolley</p>
                                         <div class="image">
                                             <img src="images/cylinder1.png">
                                         </div>
-                                        <div class="center-btn" style="text-align:center;margin-bottom:30px;">
+                                        <div class="center-btn" style="text-align:center;padding-bottom:30px;">
                                             <button type="button" class="btn btn-danger" style="background:transparent;
                                             color:#d12229;border:2px solid #d12229;border-radius:2px;padding:9px 32px;font-size:16px;">View Product</button>
                                         </div>
@@ -171,24 +322,18 @@
                                 </tr>
                             </table>
                             </td>
-                            <td width="5%">
-                                <table cellspacing="0" cellpadding="0" border="0">
-                                    <tr>
-                                        <td width="5" height="20"></td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td  width="20%" valign="middle">
+                            <td class="column-empty" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;" width="10"></td>
+                            <td  width="100">
                             <table  cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
-                                    <td class="range-text" style="background:white;text-align:center">
-                                        <h3>GTR13</h3>
+                                    <td class="range-text" style="background:white;text-align:center;padding-top:30px;">
+                                        <h3 style="margin: 0px;">GTR13</h3>
                                         <p>Single Cylinder<br>
                                             Rota Trolley</p>
                                             <div class="image">
                                                 <img src="images/cylinder2.png">
                                             </div>
-                                            <div class="center-btn" style="text-align:center;margin-bottom:30px;">
+                                            <div class="center-btn" style="text-align:center;padding-bottom:30px;">
                                                 <button type="button" class="btn btn-danger" style="background:transparent;
                                                 color:#d12229;border:2px solid #d12229;border-radius:2px;padding:9px 32px;font-size:16px;">View Product</button>
                                             </div>
@@ -196,38 +341,26 @@
                                 </tr>
                             </table>
                             </td>
-                            <td width="5%">
-                                <table  cellspacing="0" cellpadding="0" border="0" align="left">
+                            <td class="column-empty" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;" width="10"></td>
+                            <td  width="100">
+                                <table  cellspacing="0" cellpadding="0" border="0" width="100%">
                                     <tr>
-                                        <td width="5" height="20"></td>
+                                        <td class="range-text" style="background:white;text-align:center;padding-top:30px;">
+                                            <h3 style="margin: 0px;">GTR13</h3>
+                                            <p>Single Cylinder<br>
+                                                Rota Trolley</p>
+                                                <div class="image">
+                                                    <img src="images/cylinder2.png">
+                                                </div>
+                                                <div class="center-btn" style="text-align:center;padding-bottom:30px;">
+                                                    <button type="button" class="btn btn-danger" style="background:transparent;
+                                                    color:#d12229;border:2px solid #d12229;border-radius:2px;padding:9px 32px;font-size:16px;">View Product</button>
+                                                </div>
+                                        </td>
                                     </tr>
                                 </table>
-                            </td>
-                            <td width="20%" valign="middle">
-                            <table  cellspacing="0" cellpadding="0" border="0" width="100%">
-                                <tr>
-                                    <td class="range-text" style="background:white;text-align:center">
-                                        <h3>GTR13</h3>
-                                        <p>Single Cylinder<br>
-                                            Rota Trolley</p>
-                                            <div class="image">
-                                                <img src="images/cylinder3.png">
-                                            </div>
-                                            <div class="center-btn" style="text-align:center;margin-bottom:30px;">
-                                                <button type="button" class="btn btn-danger" style="background:transparent;
-                                                color:#d12229;border:2px solid #d12229;border-radius:2px;padding:9px 32px;font-size:16px;">View Product</button>
-                                            </div>
-                                    </td>
-                                </tr>
-                            </table>
-                            </td>
-                            <td width="10%">
-                                <table  cellspacing="0" cellpadding="0" border="0" align="left">
-                                    <tr>
-                                        <td width="5" height="20"></td>
-                                    </tr>
-                                </table>
-                            </td>
+                                </td>
+                                
                         </tr>
                          
                       </table>
@@ -235,7 +368,7 @@
                    
                     </tr><!-- end tr -->    
                     
-                    <tr>
+                     <tr>
                         <td>
                             
                           <table  border="0" cellpadding="0" bgcolor="#f3f3f3"  cellspacing="0" width="657" align="center">
@@ -243,24 +376,18 @@
                                 <td height="30" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
                             </tr>
                                 <tr>
-                                    <td width="10%">
-                                        <table  cellspacing="0" cellpadding="0" border="0" align="left">
-                                            <tr>
-                                                <td width="5" height="20"></td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                    <td  width="20%" valign="middle">
+                                    
+                                    <td   width="100">
                                     <table  cellspacing="0" cellpadding="0" border="0" width="100%">
                                     <tr>
-                                    <td class="range-text" style="background:white;text-align:center">
-                                        <h3>GTR13</h3>
+                                    <td class="range-text" style="background:white;text-align:center;padding-top:30px;">
+                                        <h3 style="margin: 0px;">GTR13</h3>
                                         <p>Single Cylinder<br>
                                             Rota Trolley</p>
                                             <div class="image">
                                                 <img src="images/cylinder4.png">
                                             </div>
-                                            <div class="center-btn" style="text-align:center;margin-bottom:30px;">
+                                            <div class="center-btn" style="text-align:center;padding-bottom:30px;">
                                                 <button type="button" class="btn btn-danger" style="background:transparent;
                                                 color:#d12229;border:2px solid #d12229;border-radius:2px;padding:9px 32px;font-size:16px;">View Product</button>
                                             </div>
@@ -268,24 +395,18 @@
                                     </tr>
                                 </table>
                                 </td>
-                                <td width="5%">
-                                    <table cellspacing="0" cellpadding="0" border="0">
-                                        <tr>
-                                            <td width="5" height="20"></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td  width="20%" valign="middle">
+                                <td class="column-empty" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;" width="10"></td>
+                                <td width="100">
                                 <table  cellspacing="0" cellpadding="0" border="0" width="100%">
                                     <tr>
-                                        <td class="range-text" style="background:white;text-align:center">
-                                            <h3>GTR13</h3>
+                                        <td class="range-text" style="background:white;text-align:center;padding-top:30px;">
+                                            <h3 style="margin: 0px;">GTR13</h3>
                                             <p>Single Cylinder<br>
                                                 Rota Trolley</p>
                                                 <div class="image">
                                                     <img src="images/cylinder5.png">
                                                 </div>
-                                                <div class="center-btn" style="text-align:center;margin-bottom:30px;">
+                                                <div class="center-btn" style="text-align:center;padding-bottom:30px;">
                                                     <button type="button" class="btn btn-danger" style="background:transparent;
                                                     color:#d12229;border:2px solid #d12229;border-radius:2px;padding:9px 32px;font-size:16px;">View Product</button>
                                                 </div>
@@ -293,24 +414,24 @@
                                     </tr>
                                 </table>
                                 </td>
-                                <td width="5%">
-                                    <table  cellspacing="0" cellpadding="0" border="0" align="left">
+                                <td width="10">
+                                    <table  cellspacing="0" cellpadding="0" border="0">
                                         <tr>
                                             <td width="5" height="20"></td>
                                         </tr>
                                     </table>
                                 </td>
-                                <td width="20%" valign="middle">
+                                <td  width="100">
                                 <table  cellspacing="0" cellpadding="0" border="0" width="100%">
                                     <tr>
-                                        <td class="range-text" style="background:white;text-align:center">
-                                            <h3>GTR13</h3>
+                                        <td class="range-text" style="background:white;text-align:center;padding-top:30px;">
+                                            <h3 style="margin: 0px;">GTR13</h3>
                                             <p>Single Cylinder<br>
                                                 Rota Trolley</p>
                                                 <div class="image">
                                                     <img src="images/cylinder6.png">
                                                 </div>
-                                                <div class="center-btn" style="text-align:center;margin-bottom:30px;">
+                                                <div class="center-btn" style="text-align:center;padding-bottom:30px;">
                                                     <button type="button" class="btn btn-danger" style="background:transparent;
                                                     color:#d12229;border:2px solid #d12229;border-radius:2px;padding:9px 32px;font-size:16px;">View Product</button>
                                                 </div>
@@ -318,13 +439,7 @@
                                     </tr>
                                 </table>
                                 </td>
-                                <td width="10%">
-                                    <table  cellspacing="0" cellpadding="0" border="0" align="left">
-                                        <tr>
-                                            <td width="5" height="20"></td>
-                                        </tr>
-                                    </table>
-                                </td>
+                              
                             </tr>
                             <tr>
                                 <td height="30" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
@@ -332,19 +447,21 @@
                           </table>
                         </td> 
                        
-                        </tr><!-- end tr -->      
+                        </tr><!-- end tr --> 
+                        <tr>
+                            <td height="30" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                        </tr>   
                          
                     <tr>
                         <td>
-                            <tr>
-                                <td height="30" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
-                            </tr>
-                          <table  border="0" cellpadding="0" bgcolor="#fff"  cellspacing="0" width="657" align="center">
+                            
+                          <table  border="0" cellpadding="0" bgcolor="#fff"  cellspacing="0" width="657" align="center" style="font-family: 'Usual';">
                             
                                 <tr>
                                     
-                                    <td  width="20%" valign="middle">
+                                    <td  width="20%" >
                                     <table  cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        
                                     <tr>
                                     <td class="range-text" style="background:white;text-align:center">
                                         
@@ -407,14 +524,14 @@
                         <tr>
                             <td>
                                
-                                <table align="center" border="0" bgcolor="#282828" cellpadding="20" cellspacing="0" width="657" style="border-bottom:5px solid #d12229;">
+                                <table align="center" border="0" bgcolor="#282828" cellpadding="20" cellspacing="0" width="657" style="font-family: 'Usual';border-bottom:5px solid #d12229;">
                                     <tr>
                               <td valign="middle" width="50%" >
                                   <div class="logo-foter">
                                       <img src="images/logo.png">
                                   </div>
                               </td>
-                              <td valign="middle" width="50%">
+                              <td valign="middle" width="50%" class="right">
                                   <div class="adress" style="color:white">
                                     CONTACT US TODAY ON:<br>
                                     P : 1300 134 223<br>
